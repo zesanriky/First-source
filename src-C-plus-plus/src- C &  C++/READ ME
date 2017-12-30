@@ -1,0 +1,184 @@
+Software and Viruses implementations to attack Windows and Linux machine 
+
+All source codes are written in C and C++, compilation verified, well commented, aligned and repository links are updated.
+Since we have discussed enough about HACKING  area now it’s  time to get into main business by developing tools from scratch to the hunt the bad hackers.
+
+Character coverage checking software 
+
+By using this program we can check is it possible to find out the characters that are given by the users are coverable by the program or not, it is seen that characters are coverable.
+Let’s start coding - 
+
+      ------------------ Start of Character coverage implementation -----------------
+
+Check the demo here → https://repl.it/KrUs/4 (Readable and executable)
+
+      ------------------ Ending of Character coverage implementation -----------------
+
+
+Password guessing software
+
+This software works to see if the user forgets his/her password then by giving length of the password this software can provide the possible guesses what the password was.
+
+             ------------------ Start of Password guessing implementation -----------------
+
+Check the demo here → https://repl.it/KrUH/15 (Readable and executable)
+
+           ------------------ Ending of Password guessing implementation -----------------
+
+Security protocol software
+
+The functionality of this software is defining a certain password what is consisted by small, capital letters or numbers, maximum 39 characters can be chosen but in that case protocol check may take long time so ideal is 6 characters, here 5 characters are chosen for quick response and becomes hidden e.g. ******, then checking its protocol by typing command “check-security-protocol” to know what is the hidden password and check if the user followed the protocol instruction.
+
+        ------------------ Start of Security protocol implementation -----------------
+
+Check the demo here →https://repl.it/repls/NonstopWelllitTrumpeterbird
+ (Readable and executable)
+
+       ------------------ Ending of Security protocol  implementation -----------------
+
+Key logger software 
+
+First of all compiler has to be  installed on your computer you can use Visual Studio, Dev C++. Copy and paste the whole code from repository link and  saving the file as  “Key_logger.cpp”.
+After  saving... 
+- Compile the source file
+- You will get a .exe file
+On opening the .exe file your system will launch the software.
+This software is developed to record and logging all the key strokes, the user is typing gets compromised in real time.
+    ------------------ Start of Key logger  implementation -----------------
+
+Readable Code→   https://repl.it/repls/FixedExperiencedAmoeba 
+(Readable only, to make executable please read instruction)
+  
+    ------------------ End of Key logger  implementation -----------------
+
+Elementary Virus 
+
+First of all compiler has to be  installed on your computer you can use Visual Studio, Dev C++, this is a primary level virus to make the computer restart and crash. After Copy and paste the whole code from repository link  and  saving the file as “elemetary_virus.cpp”.
+After saving...
+- Compile the source file
+- You will get a .exe file
+On opening the .exe file your system will restart and crash.
+
+         ------------------ Start of Elementary Virus implementation -----------------
+
+Readable Code→  https://repl.it/repls/InsignificantRottenIvorygull 
+(Readable only, to make executable please read instruction)
+          ------------------ End of Elementary Virus implementation -----------------
+Intermediate virus 
+
+First of all compiler has to be  installed on your computer you can use Visual Studio, Dev C++. Copy and paste the whole code from repository link  and  saving  the file as “intermediate_virus.cpp”.
+After saving...
+- Compile the source file
+- You will get a .exe file
+
+On opening the .exe file will make the following actions : 
+Make your comp beep different freq and different lengths again by rand numbers
+Add your program to run when windows starts
+Find windows by name and destroy them … Using the Find Window command lets use do it and if its not null and it found the window open give it a command.
+Open random Apps as it says OpenStuff
+Making your mouse go crazy. Make two rand var’s and tell the mouse to goto them
+Turn off the monitor
+
+------------------ Start of Intermediate Virus implementation -----------------
+
+Readable Code→  https://repl.it/repls/LightQuestionableAlligatorsnappingturtle 
+(Readable only, to make executable please read instruction )
+------------------ End of Intermediate Virus implementation -----------------
+
+ Deadly virus
+
+First of all compiler has to be  installed on your computer you can use Visual Studio, Dev C++.
+Copy and paste the whole code from repository link  and  saving  the file as
+ “deadly_virus.cpp”.
+
+After saving...
+- Compile the source file
+- You will get a .exe file
+
+On opening the .exe file will attack the computer and make it shut down, then the computer will never start up again.
+------------------ Start of Deadly virus  implementation -----------------
+
+Readable Code→ https://repl.it/repls/SpryConcernedIridescentshark 
+(Readable only, to make executable please read instruction )
+------------------ End of Deadly virus  implementation -----------------
+
+The Hunter (Hacking software for Windows using Hacker)
+
+This is a hacking tool what is named as “HUNT3Rzz”and developed in this research paper by integrating the above implementations such as Security protocol software, Keylogger software, Elementary-Virus, Intermediate-Virus and Deadly-Virus. This software is written in pure C++.
+Here is the whole software code to look at but will not compile unless it is getting run on personal computer in IDE Visual Studio C++, Dev C++.
+Copy and paste the whole code from repository link and  saving  the file as “the_hunter.cpp”.
+
+After saving…
+
+- Compile the source file
+
+- You will get a .exe file
+
+On opening the .exe file will launch the software.
+
+
+
+Check the demo → https://repl.it/repls/EqualUnwrittenSaiga (runnable and risk free) here Keylogger and Virus spreading options will show up but  not be activated though in the end will print some messages of successful activation, feel free to run. (Readable and executable)
+
+Check the demo → https://repl.it/repls/KindlyAuthenticBushsqueaker (Non runnable but risky) (Readable only, to make executable please read instrcution)Note :  Please do not try run on personal computer to avoid virus attack, it is for educational purposes not yet published globally. 
+
+How it works
+
+First of all as an ethical hacker when we observe our computer is doing some irregular activities e.g. increasing network activity, installing unnecessary programs, password changing etc. these are the hints of hack then first task is collecting attacker’s IP address, checking authentication of IP address  using http://www.find-ip-address.org/, KALI which is a flavor of Linux operating system for attacking someone’s computer (Windows).
+
+When we are in other’s system then to launch the software we need to set a password for checking security protocol, then first part of the software will check whether the user has chosen the given password by including small letters, capital letters or numbers, maximum 39 characters can be chosen but in that case protocol check may take long time so ideal is 6 characters, if so then protocol checking is successful, in next step the software will ask for installing Keylogger to monitor the attacker’s activity of key stroke or spreading different types of Viruses in the victim’s computer, depending on the evil activities. This is why this software will earn popularity than today’s existing softwares because there are password cracking tools out there but not like this one which has three different features, let’s say
+
+ three in one in following way -
+
+- Security protocol
+
+- Installing Keylogger
+
+- Spreading Viruses →     (i) Elementary Virus
+                        (ii) Intermediate Virus
+                        (iii) Deadly Virus
+
+HUNT3Rzz (Hacking software for Linux using Hacker)
+
+This version of the software stands for attacking Linux/Mac operating system. It is written in C programming.
+Check the demo →  https://repl.it/repls/ButteryBurlyPussycat (Readable and executable )
+
+Check the demo →https://repl.it/repls/RowdyMildQueenslandgrouper (Non runnable but risky)
+(Readable only, to make executable please read instruction)
+
+How to make the software functioning 
+
+After breaking into Hacker’s computer (Linux/Mac)
+- Copy and paste the whole code from repository link 
+- Pasting in a text editor
+- Saving it as  “The_Hunter.c”
+ Making an executable file by typing in terminal
+gcc  The_Hunter.c -o  The_Hunter.c1
+Then running the executable file by entering
+./The_Hunter.c1
+It will ask for username and password to proceed as security protocol, then it will perform the following actions :
+Runs the command 'ps -aef' and stores its output in ps.txt 
+Reads the text file ps.txt line by line and extracts the process names. 
+Then that process name is used for our process. 
+Note that since the above code is used for practice and to build understanding of the concept so it uses a constant string "123" in the beginning of every new process name so that it becomes easy to track(using ps command) that this is our process. 
+If some how a process name could not be found by the logic, then name '/bin/bash' is used by default . 
+If all the lines in ps.txt are read then the logic is written in such a way that steps 1 to steps 3 start repeating again. 
+Hence we see the above code when executed, becomes a process that changes its name after every one second. 
+Please make sure that in case you want to terminate the process then terminate it using ctrl+c as its an infinite running process. 
+
+Note : The code is tested on 64 bit Linux Mint. 
+
+The objective behind developing the software
+
+The objective behind developing this software is fighting against the evil hackers. If we know about the attacker that he/she is getting in to crime activity then we can break their security system by  following security protocol and installing Keylogger to keep an eye on their works, or if we know already about the attacker that the person is a bad hacker then we can warn by spreading Elementary Viruses or Intermediate Virus, if the attacker’s activity is too evil then we crash their whole system by spreading Deadly Virus. 
+
+Code of life
+
+This source code I named as  code of life because I have been and will be following this code for the rest of my life and this is applicable for those who wants to shake their hands with success.
+
+                    ------------------ Start of Code of life’s implementation -----------------
+
+Check the demo here → https://repl.it/KrUs/8 (Readable and executable)    
+
+                    ------------------ End of Code of life’s  implementation-----------------
+
