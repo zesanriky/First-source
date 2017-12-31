@@ -157,7 +157,7 @@ fflush(stdout);
     std::string  line;
      //Prompting user to enter an option according to menu
 
-do{
+
 
  //start task-1
      cout << "Please select an option : "<<endl;
@@ -278,6 +278,8 @@ do{
 
 
 //start task-2 
+
+do{
 
   cout << "Please select an option : "<<endl;
   //Displaying Options for the menu
@@ -983,6 +985,8 @@ cout << "Please select an option : "<<endl;
      
          object.startcooking() ;
 
+            cout << "Cooking is done " << endl;  
+
    break;
 
     } 
@@ -1230,6 +1234,130 @@ if(option==8) //if user has entered invalid choice (other than 1,2,3 or 4)
   
      //end of task-9
 
+     // Start repeating task-1 
+
+cout << "Please select an option : "<<endl;
+  //Displaying Options for the menu
+     cout << "1) Opening lid " << endl;
+     cout << "2)Insert filter " << endl;
+     cout << "3) Inserting coffee " << endl;
+     cout << "4) Inserting water" << endl;
+     cout << "5) Closing lid " << endl;
+     cout << "6) Switch on " << endl;
+     cout << "7) Start cooking " << endl;
+     cout << "8) Switch off " << endl;
+     cout << "9) Taking coffee " << endl;
+     cout << "10)remove filter  " << endl;
+  // taking option value as input and saving in variable "option"
+ 
+    while(std::getline(std::cin, line))   // read a line at a time for parsing.
+    {
+        std::stringstream linestream(line);
+        if (!(linestream >> option))
+        {
+                  cout<<"Sorry invalid input"<<endl;
+
+             continue;
+        }
+    
+         
+   if(option==2) //if user has entered invalid choice (other than 1,2,3 or 4)
+
+     {
+       //Displaying error message
+
+       cout << "A filter has been inserted" << endl;
+     }
+
+ if(option==3) //if user has entered invalid choice (other than 1,2,3 or 4)
+
+     {
+       //Displaying error message
+
+       cout << " cook new coffee " << endl;
+     }
+ if(option==4) //if user has entered invalid choice (other than 1,2,3 or 4)
+
+     {
+       //Displaying error message
+
+       cout << " cook new coffee " << endl;
+     }
+ if(option==5) //if user has entered invalid choice (other than 1,2,3 or 4)
+
+     {
+       //Displaying error message
+
+       cout << "Lid can be closed after inseting new filter" << endl;
+     }
+
+
+ if(option==6) //if user has entered invalid choice (other than 1,2,3 or 4)
+
+     {
+       //Displaying error message
+
+       cout << "Switch can be on while making new coffee" << endl;
+     }
+ if(option==7) //if user has entered invalid choice (other than 1,2,3 or 4)
+
+     {
+       //Displaying error message
+
+       cout << "Cooking is done" << endl;
+     }
+
+if(option==8) //if user has entered invalid choice (other than 1,2,3 or 4)
+
+     {
+       //Displaying error message
+
+       cout << "Switch is off" << endl;
+     }
+ if(option==9) //if user has entered invalid choice (other than 1,2,3 or 4)
+
+     {
+       //Displaying error message
+
+       cout << "Coffee is taken" << endl;
+     }
+
+ if(option==10) //if user has entered invalid choice (other than 1,2,3 or 4)
+
+     {
+       //Displaying error message
+
+       cout << "Opne the lid first" << endl;
+     }
+
+
+
+        if ((option < 1) || (option > 1))
+        {
+       cout<<"Sorry invalid input"<<endl;
+             continue;
+        }
+        char errorTest;
+        if (linestream >> errorTest)
+        {
+                   cout<<"Sorry invalid input"<<endl;
+
+             continue;
+        }
+
+
+   cout<<"Correct choice"<<endl; 
+     
+         object.openlid();
+
+   break;
+
+    }
+
+
+// End repeating task-1 
+
+
 
  //start task-10
 
@@ -1260,7 +1388,7 @@ cout << "Please select an option : "<<endl;
    if(option==1)  
 
       {
-          cout << "To open the lid select to make new coffee after removing the filter "<< endl;}      
+          cout << "The lid is already open"<< endl;}      
          
    if(option==2) //if user has entered invalid choice (other than 1,2,3 or 4)
 
@@ -1289,7 +1417,7 @@ cout << "Please select an option : "<<endl;
      {
        //Displaying error message
 
-       cout << "Lid is  closed" << endl;
+       cout << "Lid can be closed after inseting new filter" << endl;
      }
 
 
