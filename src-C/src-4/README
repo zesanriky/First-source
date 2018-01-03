@@ -1,0 +1,3 @@
+Project on "Quiz" in C 
+
+In this mini project I didn't use file handling for storing  and reading question .I have used file only for storing score won by players so it is not good Idea. Anyway this project may guide you to create Quiz game by using file handling for storing and reading question .

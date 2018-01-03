@@ -1,0 +1,14 @@
+C project on Medical Store Management System with source 
+
+This is large and complete c project built for medical store management system. In this project you can keep details of customer , suppliers and medicine. You can view the report and billing information also. You can add,edit, delete and search the record also. This project is also console application without graphics compile in code::blocks IDE with MinGW compiler.
+Whole project is completely based on file handling all the record are store in file. You learn how to store the data ,editing data, searching data and deleting data using file. You can see the following feature in this projects.
+1. Supplier Info
+2.Customer Info
+3.Medicine
+4.Report
+5.Bill
+
+
+
+You have to press the first character to choose the option. After you press you choice you can keep details each of them.
+Source code of this project is very large more than two thousand (2000) lines of code so I didn't like to paste the code here as like of my other articles. You can download the complete source code from GitHub.

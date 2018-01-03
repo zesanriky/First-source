@@ -1,0 +1,16 @@
+Airline Reservation System In C Language With Source Code
+
+A C-Language Project based on console, implementing Airline Reservation System with the help of filing.
+
+This airline management sytem for the reservation of tickets,checking their seats or time of the concered flight.
+
+Tools:
+
+This project mainly is perform on c language.
+
+Description:
+
+In this system,passenger can make reservation of any flight it can be of domestic type or international one.
+The passenger can print ticket according to the desire of the passenger.
+The passenger can make reservation in first class or in economy class.
+He can also cancel the reservation & at same time he can make reservation of new one.
