@@ -20,9 +20,14 @@ cout << "   This is a password geussing software, when you want to get access in
 
 cout << "   Enter the length of the password, it will give you predicted possibilties of the password : "<<endl;
 
+cout << "\n User input : "; 
+
 cin >> length;//taking the user input
 
-cout << "   Let me think, it could be : \n "<<endl;
+cout << "\n System output : "<< endl;   
+
+
+cout << " \n Let me think, it could be : \n "<<endl;
 
 int count = 0;
 cout << endl << "Loading\n "<<endl;
@@ -82,4 +87,3 @@ cout << "\nI have tried to geuss it for " << tries <<" times"<< endl; // number 
 
 return 0;// ending the program
 }
-
