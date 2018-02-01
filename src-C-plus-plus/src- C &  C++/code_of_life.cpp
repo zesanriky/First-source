@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <unistd.h>
 #include <stdio.h>
@@ -12,13 +11,15 @@ int main()
 {
 
 int pain_in_life; // integer variable declaration
-cout<< "This source code I named as code of life because I have been and will be following this code for the rest of my life and this is applicable for those who wants to shake their hands with success.\n" <<endl;
+cout<< "This source code is named as code of life because who has been and will be following this code for the rest of the life and this is applicable for those who wants to shake their hands with success.\n" <<endl;
 
-cout<<"Please enter the number of pains you can take\nRecommended to enter any integer number\n" <<endl;
-
+cout<<"Please enter the number of pains you can take\nRecommended to enter any integer number\n\n" <<endl;
+cout<<"\n User input : " ;
 cin>>pain_in_life;// taking input from the users
 
-cout << "Efforts are being paid off \nGo to the bottom of the output to see the results \n" << endl;
+cout<<"\nSystem output :\n "<<endl;
+cout << "Efforts are being paid off \n\nGo to the bottom of the output to see the results \n" <<
+endl;
 
 
 for(int success_in_life=0; success_in_life < pain_in_life; success_in_life++){
@@ -38,4 +39,3 @@ sleep(1);
 return 0; // ending the program
 
 }
-
