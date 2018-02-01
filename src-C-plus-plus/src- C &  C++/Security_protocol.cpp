@@ -21,10 +21,19 @@ string str2 = "check-security-protocol";//setting the string to check the protoc
 string p ;
 w:{
   cout << "The functionality of this software is defining a certain password what is consisted by small, capital letters or numbers, maximum 39 characters can be chosen but in that case protocol check may take long time so ideal is 6 characters, here 5 characters are chosen for quick respnose and becomes hidden e.g. ******, then checking its protocol by typing command “check-security-protocol” to know what is the hidden password and check if the user followed the protocol instruction.\n"<<endl; 
+  
+ 
+  
 cout << "Enter the defined password ‘zesan’ \n"<<endl;
+
+cout << "\n User input : ";  
+
 getline(cin, p);// user input
 if(p != str1)
 {
+  
+cout << "\n System output : "<< endl; 
+
 cout << "\nRequest is in progress..........\n"<<endl;
 
 sleep(5);
@@ -33,21 +42,33 @@ goto w;
 }
 else if(str1=="zesan")
 {
+  
+cout << "\n System output : "<< endl; 
+  
 cout << "\nRequest is in progress..........\n"<<endl;
 
 sleep(5);
 cout<<"\nAccess Granted\n"<<endl; // if input is matched
 }
 o:{  
+
+cout << "\n User input : ";  
+  
 cout << "\n Type command 'check-security-protocol' \n\n";
 getline(cin, p);// input to check the hidden password
 if(p != str2)
 {
+
+cout << "\n System output : "<< endl; 
+  
 cout << "\nAccess Denied\n"<<endl;//// if input not matched
 goto o;
 }
 else if(str2=="check-security-protocol")
 {
+  
+cout << "\n System output : "<< endl; 
+  
 cout<<"\n Protocol Initialized..........\n"<<endl;// if input is matched
 sleep(5); 
 }
@@ -95,7 +116,7 @@ int digit[7], alphabetSet = 1, passwordLength = 1; // defining the function
 string test, alphabet = "1337 also daktari is pro";
 while (1){
 switch (passwordLength){
-  case 1:
+case 1:
 // checking if the password length is less then 4 characters
 //considering digit [0]          
 while (alphabetSet<4){
@@ -271,7 +292,7 @@ cout << endl << endl << "Couldn't find the password, increasing the searching le
 case 5: alphabet = "-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing uppercase characters and numbers(0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ) - 36 Characters, please wait"<<endl;  break;
 case 6: alphabet = "-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                    cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing lowercase, uppercase characters(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ) - 52 Characters, please wait"<<endl;  break;                    
+cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing lowercase, uppercase characters(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ) - 52 Characters, please wait"<<endl;  break;                    
 case 7: alphabet = "-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing lowercase, uppercase characters and numbers(0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ) - 62 Characters, please wait"<<endl;  break;
 }                
@@ -508,9 +529,9 @@ cout << endl << endl << "Couldn't find the password, increasing the searching le
 case 4: alphabet = "-0123456789abcdefghijklmnopqrstuvwxyz";
 cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing lowercase characters and numbers(0123456789abcdefghijklmnopqrstuvwxyz) - 36 Characters, please wait"<<endl;  break;
 case 5: alphabet = "-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                    cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing uppercase characters and numbers(0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ) - 36 Characters, please wait"<<endl;  break;                    
+cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing uppercase characters and numbers(0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ) - 36 Characters, please wait"<<endl;  break;                    
 case 6: alphabet = "-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                    cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing lowercase, uppercase characters(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ) - 52 Characters, please wait"<<endl;  break;                   
+cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing lowercase, uppercase characters(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ) - 52 Characters, please wait"<<endl;  break;                   
 case 7: alphabet = "-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing lowercase, uppercase characters and numbers(0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ) - 62 Characters, please wait"<<endl;  break;
 }
@@ -786,7 +807,7 @@ cout << endl << endl << "Couldn't find the password, increasing the searching le
 case 5: alphabet = "-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing uppercase characters and numbers(0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ) - 36 Characters, please wait"<<endl;  break;
 case 6: alphabet = "-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing lowercase, uppercase characters(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ) - 52 Characters, please wait"<<endl;  break;  
+cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing lowercase, uppercase characters(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ) - 52 Characters, please wait"<<endl;  break;  
 case 7: alphabet = "-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 cout << endl << endl << "Couldn't find the password, increasing the searching level." << endl << endl << "Testing lowercase, uppercase characters and numbers(0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ) - 62 Characters, please wait"<<endl;  break;  
 }                
