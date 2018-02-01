@@ -16,39 +16,39 @@ static struct termios old, new;
 /* Initialize new terminal i/o settings */
 void initTermios(int echo)
 {
-  tcgetattr(0, &old); /* grab old terminal i/o settings */
-  new = old; /* make new settings same as old settings */
-  new.c_lflag &= ~ICANON; /* disable buffered i/o */
-  new.c_lflag &= echo ? ECHO : ~ECHO; /* set echo mode */
-  tcsetattr(0, TCSANOW, &new); /* use these new terminal i/o settings now */
+tcgetattr(0, &old); /* grab old terminal i/o settings */
+new = old; /* make new settings same as old settings */
+new.c_lflag &= ~ICANON; /* disable buffered i/o */
+new.c_lflag &= echo ? ECHO : ~ECHO; /* set echo mode */
+tcsetattr(0, TCSANOW, &new); /* use these new terminal i/o settings now */
 }
  
 /* Restore old terminal i/o settings */
 void resetTermios(void)
 {
-  tcsetattr(0, TCSANOW, &old);
+tcsetattr(0, TCSANOW, &old);
 }
  
 /* Read 1 character - echo defines echo mode */
 char getch_(int echo)
 {
-  char ch;
-  initTermios(echo);
-  ch = getchar();
-  resetTermios();
-  return ch;
+char ch;
+initTermios(echo);
+ch = getchar();
+resetTermios();
+return ch;
 }
  
 /* Read 1 character without echo */
 char getch(void)
 {
-  return getch_(0);
+return getch_(0);
 }
  
 /* Read 1 character with echo */
 char getche(void)
 {
-  return getch_(1);
+return getch_(1);
 }
  
 /* function :   getPassword(),
@@ -57,85 +57,107 @@ char getche(void)
 void getPassword(char *pass)
 {
    
-    int c=0;
-    char buff[30]={0},ch;
-    int len=0;
+int c=0;
+char buff[30]={0},ch;
+int len=0;
     
-    while((ch=getch())!='\n')
-    {
+while((ch=getch())!='\n')
+{
 
-        if(ch==0x7f)    // use 0x08 in turboc (WINDOWS)
-        {
-            if(len==0)  continue;
-            printf("\b \b"); len--; continue;
-        }
+if(ch==0x7f)    // use 0x08 in turboc (WINDOWS)
+{
+if(len==0)  continue;
+printf("\b \b"); len--; continue;
+}
 
-        pass[len]=ch;
-        len++;
+pass[len]=ch;
+len++;
         
-    }
+}
     
-    pass[len]='\0';
+pass[len]='\0';
     
 }
 
 
 int main()
 {
-  int i;
-    int tasks = 101;
- char answer;
-    char user[30],pass[30];
+int i;
+int tasks = 101;
+char answer;
+char user[30],pass[30];
     
-        printf("The functionality of this software is defining a certain 'username' and  'password' what is given for each individual user for checking its security protocol, then typing command “Y/N” to confirm for performing Virus operation.\n"); 
+printf("The functionality of this software is defining a certain 'username' and  'password' what is given for each individual user for checking its security protocol, then typing command “Y/N” to confirm for performing Virus operation.\n"); 
         
+tryagain :
+{
 
-    printf("\n\nEnter User Name :");
-    gets(user);
-    printf("\n\nEnter Password  :");
-    getPassword(pass);
+printf("\n\nUser input : ");
 
-    if(strcmp(user,USERNAME)==0 && strcmp(pass,PASSWORD)==0)
+printf("\n\nEnter User Name :");
+gets(user);
+printf("\n\nEnter Password  :");
+getPassword(pass);
+
+if(strcmp(user,USERNAME)==0 && strcmp(pass,PASSWORD)==0)
     
-     {  
-        printf("\n\nLOGIN SUCCESSFUl.\n");
+{ 
+
+printf("\n\nSystem output:\n");
+  
+printf("\n\nLOGIN SUCCESSFUl.\n");
    
-    printf("\nWould you like to attack by spreading 'Shebang' virus "); 
+printf("\nWould you like to attack by spreading 'Shebang' virus "); 
     
     
-       printf("\n\nEnter Y or N: ");
-    while (scanf(" %c", &answer) == 1 && answer == 'Y')
-    {
-        printf("\n\nAnswer is %c\n", answer);
-        printf("\nProceeding..........\n");
+printf("\n\nEnter Y or N: ");
+
+printf("\n\nUser input : ");
+
+while (scanf(" %c", &answer) == 1 && answer == 'Y')
+{
+printf("\n\nAnswer is %c\n", answer);
+printf("\n\nSystem output:\n");
+
+printf("\nProceeding..........\n");
         
-        sleep(2);
+sleep(2);
         
-      printf("\nOperation is in action..........\n");
+printf("\nOperation is in action..........\n");
  
-    for(i = 10; i < tasks; i+=10) {
-        int pct = ((float) i / tasks) * 5;
+for(i = 10; i < tasks; i+=10) {
+int pct = ((float) i / tasks) * 5;
 
-        printf("  \n %3d%% \n", i, pct);
-        fflush(stdout);
+printf("  \n %3d%% \n", i, pct);
+fflush(stdout);
 
-        sleep(2);
-    }
+sleep(2);
+  
+}
 
-    printf("\n'Shebang' attack successful\n");
+printf("\n'Shebang' attack successful\n");
     
-        printf("\nDo you want to rerun ? Y or N: ");
-    }
-    printf("\nGoodBye!\n");
+printf("\nDo you want to rerun ? Y or N: ");
 
-        printf("\nProgram terminated\n");
-     
-       
-       
-     }
-     
-    else
-{        printf("\nLOGIN FAILED.\n");}
+printf("\n\nUser input : ");
 
-    return 0;
+}
+
+printf("\n\nSystem output:\n");
+
+printf("\nGoodBye!\n");
+
+printf("\nProgram terminated\n");
+  
+}
+
+else
+{ 
+
+printf("\nLOGIN FAILED.\n");
+  
+goto tryagain;  
+}}
+
+return 0;
 }
