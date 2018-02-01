@@ -17,8 +17,12 @@ string generatedPass;
 
 cout << "Password coverage checking alphabatically, it is recommended to enter not more than 4 alphabatic small letter without special characters. " << endl;
         
+cout << "\n User input : ";  
  
 cin >> password;// user input
+
+cout << "\n System output : "<< endl;   
+
     
 cout << "\nAnalysis in progress " << endl;  
   
@@ -65,4 +69,3 @@ cout << generatedPass << endl; // gives the result
 
 return 0; // ending the program
 }
-
