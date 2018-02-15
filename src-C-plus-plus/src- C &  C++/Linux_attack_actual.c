@@ -102,7 +102,7 @@ int tasks = 101;
 char answer;
 char user[30],pass[30];
 
- printf("The functionality of this software is defining a certain 'username' and  'password' what is given for each individual user for checking its security protocol, then typing command “Y/N” to confirm for performing Virus operation. For this demo type username : zesan and password : AbdurRiky12$ \n");
+ printf("The functionality of this software is defining a certain 'username' and  'password' what is given for each individual user for checking its security protocol, then typing command “Y/N” to confirm for performing Virus operation. For this demo type username : zesan and password : asd123 \n");
 
 againtry:
 
