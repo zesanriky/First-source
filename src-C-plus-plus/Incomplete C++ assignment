@@ -99,7 +99,8 @@ void IntervalMapTest()
 
 {
     
-  
+  cout<<  "\n\nMap test is running for interval unsigned int and char for different ranges ";
+
     
     }
 //me code ends
@@ -136,6 +137,7 @@ for (int i= 0; i< 5;i++)
   
  cout<<(n[K]);
 
-    
+m.IntervalMapTest(); 
+
 }
 
